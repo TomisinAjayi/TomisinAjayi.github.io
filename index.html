@@ -1,55 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard - PiggyVest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="signup.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tomisin</title>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+    <script src="script.js"></script>
 <body>
-    <a href=""><img src="PiggyVest Logo.png" alt=""></a>
-    <div class="middlebox">
-        <header>
-            <h3>Create a Secure Account</h3>
-            <p>Welcome to the future of Savings & Investments</p>
-        </header>
-        <div class="formbox">
-            <form>
-                <label for="fname">Full Name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
-                <label for="email">Email Address</label><br>
-                <input type="email" id="email" name="email" placeholder="Email Address"><br>
-                <label for="phone">Phone Number</label><br>
-                <input type="phone" id="phone" name="phone" placeholder="Phone Number"><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="Password"><br>
-                <label for="code">Referrer Phone or Promo Code (Optional)</label><br>
-                <input type="text" id="code" name="code" placeholder="Referrer Phone or Code"><br>
-                <label for="referrer">How Did You Hear About Us? (Optional)</label><br>
-                <input list="referrer" name="referrer" placeholder="Click To Select">
-                    <datalist id="referrer">
-                        <option value="Click To Select">
-                        <option value="Facebook">
-                        <option value="Twitter">
-                        <option value="Instagram">
-                        <option value="Friend/Family/Coworker Referral">
-                        <option value="Google search">
-                        <option value="Google playstore">
-                        <option value="Online Blog">
-                        <option value="Local Newspaper">
-                        <option value="At an event">
-                        <option value="Other">
-                    </datalist>
-                <br>
-                <button> CREATE ACCOUNT </button>
-            </form>
-            
+    <div class="top">
+        <div class="note">
+          <h2>Tomisin Ajayi.</h2>
+          <p>A Passionate Front-End Web Developer.</p>
+          <button type="button" name="button" id="downbutton">
+            <span>MORE ON ME <i class="arrow down"></i></span>
+          </button>
         </div>
     </div>
-    <div class="bottombox">
-        <a href="http://">Already have an account? Log In</a>
+    <section class="middle" id="middlebody">
+        <h3>About <b>Me</b></h3>
+        <div class="dividesection">
+            <div class="column" id="left">
+                <p class="aboutme-note">I'm a front-end developer in Lagos,Nigeria. <br> I enjoy turning complex problems into simple, beautiful and intuitive designs. I have a passion for web design and love to create for web and mobile devices. I know how to create your website to run across devices using the latest technologies available. <br> I find interest in playing video games, visiting new environments with friends and watching TV.</p>
+            </div>
+            <div class="column" id="right">
+                <div class="row">
+                    <div class="rowcolumn" id="text">
+                        <h5>Other Information about me:</h5>
+                        <p>STATE OF ORIGIN: Lagos State.</p>
+                        <p>DATE OF BIRTH: 13/01/2001</p>
+                        <p>HOMETOWN: Eredo.</p>
+                        <p>SLACK-ID: @TomisinAjayi</p>
+                    </div>
+                    <div class="rowcolumn" id="picture"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact">
+        <div class="contactrow">
+            <div class= "contactcolumn" id="left-form">
+            <h4>Get In Touch</h4>
+            <form>
+                <div class="form-group">
+                <input type="text" class="form-style" id="exampleName" aria-describedby="" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                <input type="email" class="form-style" id="exampleEmail" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                <input type="phone" class="form-style" id="examplenumber" placeholder="Your Phone">
+                </div>
+                <textarea name="name" class="textarea-style" rows="8" cols="70" placeholder="Leave A Message"></textarea>
+                <button type="submit" name="button" id="sendmessagebutton">SEND MESSAGE</button>
+            </form>
+            </div>
+            <div class= "contactcolumn" id="right-contact">
+                <h4>Contact</h4>
+                <p class="contact-head">EMAIL</p>
+                <p class="contact-note">thomieajayi@gmail.com</p>
+                <p class="contact-head">PHONE</p>
+                <p class="contact-note">(+234)-905-874-2317</p>
+                <p class="contact-head">ADDRESS</p>
+                <p class="contact-note">Hogan-Bassey cr., Surulere, Lagos.</p>
+                <!--<div class="top social">
+                    <ul class="nav nav-pills">
+                    <li class="icon-style"><a href="https://twitter.com/_msTUNECHI"><i class="fab fa-twitter"></i></a></li>
+                    <li class="icon-style"><a href="https://www.instagram.com/onelookisallittakes/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="icon-style"><a href="https://github.com/TomisinAjayi?tab=repositories"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
     </div>
 </body>
 </html>
